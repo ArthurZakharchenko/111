@@ -1,0 +1,26 @@
+var login = document.getElementById("login");
+
+var inputItem = document.createElement("input");
+inputItem.type = "text";
+inputItem.placeholder = "Input item pls";
+
+var buttonEnter = document.getElementById("button")
+var buttonEnter = document.createElement("button");
+buttonEnter.type = "button";
+buttonEnter.innerText = "+";
+buttonEnter.className = "green";
+buttonEnter.addEventListener(
+	"click",
+  function () {
+  	var inputText = inputItem.value;
+  	var item = document.createElement("li");
+  	item.innerText = inputText;
+  	itemList.appendChild(item);
+  }
+);
+
+var itemList = document.createElement("ul");
+
+
+login.appendChild(inputItem);
+
